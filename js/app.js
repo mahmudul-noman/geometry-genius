@@ -40,3 +40,25 @@ document.getElementById('rhombus-btn').addEventListener('click', function(){
     serial +=1;
     displayData(card_Name, rhombusFinalResult);
 })
+
+
+// card 5 : Pentagon
+document.getElementById('pentagon-btn').addEventListener('click', function(){
+    const pentagonFixedValue = 0.5;
+    const pentagonResult = getInnerElementValueById('pentagon-p-value', 'pentagon-b-value');
+    const pentagonFinalResult = pentagonFixedValue * pentagonResult;
+    const card_Name = document.getElementById('pentagon-title').innerText;
+    serial +=1;
+    displayData(card_Name, pentagonFinalResult);
+})
+
+
+// card 6 : Ellipse
+document.getElementById('ellipse-btn').addEventListener('click', function(){
+    const pieValue = 3.14;
+    const ellipseResult = getInnerElementValueById('ellipse-a-value', 'ellipse-b-value');
+    const ellipseFinalResult = (pieValue * ellipseResult).toFixed(2);
+    const card_Name = document.getElementById('ellipse-title').innerText;
+    serial +=1;
+    displayData(card_Name, ellipseFinalResult);
+})

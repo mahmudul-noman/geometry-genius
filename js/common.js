@@ -25,7 +25,8 @@ function displayData(cardName, cardValue) {
     tr.innerHTML = `
       <td>${serial}</td>
       <td>${cardName}</td>
-      <td>${cardValue}</td>
+      <td>${cardValue}cm<sup>2</sup></td>
+      <td><button class="btn btn-primary btn-sm">Convert to m<sup>2</sup></button></td>
     `;
     container.appendChild(tr);
   }

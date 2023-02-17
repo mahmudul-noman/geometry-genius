@@ -21,7 +21,7 @@
                 <a class="navbar-brand"> <span style="font-size: 30px; font-weight: 700;">Interactive</span>
                     <br>Geometry Genius</a>
                 <form class="d-flex" role="search">
-                    <button class="btn btn-primary px-4" type="submit">Blog</button>
+                    <button class="btn btn-primary btn-lg px-4" type="submit">Blog</button>
                 </form>
             </div>
         </nav>
@@ -90,20 +90,14 @@
                 <div class="card h-100">
                     <div class="card-body text-center">
                         <h5 class="card-title"><u>Area Calculation</u></h5>
-                        <table class="table w-full">
+                        <table class="table table-striped table-bordered w-full">
                             <tbody id="table-container">
                                 <tr>
                                     <th>SL</th>
                                     <th>Title</th>
                                     <th>Value</th>
+                                    <th>Converter</th>
                                 </tr>
-                              <!-- <tr>
-                                <th>1</th>
-                                <td>Cy Ganderton</td>
-                                <td>Quality Control Specialist</td>
-                                <td>Blue</td>
-                              </tr> -->
-                              <!-- <button id="convert-btn" class="btn btn-primary d-none">Convert to m<sup>2</sup></button> -->
                             </tbody>
                           </table>
                     </div>
@@ -134,15 +128,15 @@
                 <div class="card h-100 p-5">
                     <img src="images/pentagon.png" class="card-img-top" alt="Pentagon">
                     <div class="card-body text-center pt-5">
-                        <h5 class="card-title">Pentagon</h5>
+                        <h5 id="pentagon-title" class="card-title">Pentagon</h5>
                         <p class="card-text">Area (A) = 0.5 &#215; p &#215; b</p>
 
                         <div class="input-box text-center d-flex justify-content-center">
-                            <p>p = <span>6</span>cm,</p> &nbsp;
-                            <p>b = <span>10</span>cm</p>
+                            <p>p = <span id="pentagon-p-value">6</span>cm,</p> &nbsp;
+                            <p>b = <span id="pentagon-b-value">10</span>cm</p>
                         </div>
 
-                        <button class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
+                        <button id="pentagon-btn" class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -153,15 +147,15 @@
                 <div class="card h-100 p-5">
                     <img src="images/ellipse.png" class="card-img-top" alt="Ellipse">
                     <div class="card-body text-center pt-5">
-                        <h5 class="card-title">Ellipse</h5>
+                        <h5 id="ellipse-title" class="card-title">Ellipse</h5>
                         <p class="card-text">Area (A) = &pi;ab</p>
 
                         <div class="input-box text-center d-flex justify-content-center">
-                            <p>a = <span>10</span>cm,</p> &nbsp;
-                            <p>b = <span>4</span>cm</p>
+                            <p>a = <span id="ellipse-a-value">10</span>cm,</p> &nbsp;
+                            <p>b = <span id="ellipse-b-value">4</span>cm</p>
                         </div>
 
-                        <button class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
+                        <button id="ellipse-btn" class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
                     </div>
                 </div>
             </div>

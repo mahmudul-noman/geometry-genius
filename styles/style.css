@@ -2,12 +2,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    padding: 0px 50px;
+    padding: 25px;
 }
-table, th, td {
-    border: 1px solid #ddd;
-    border-collapse: collapse;
-  }
 
 .myNav {
     background-color: #1090D81A;
