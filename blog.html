@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles/blog.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="container-fluid">
+        <nav class="myNav navbar px-5 mb-5">
+            <div class="container-fluid">
+                <a class="navbar-brand"> <span style="font-size: 30px; font-weight: 700;">Interactive</span>
+                    <br>Geometry Genius</a>
+                <form class="d-flex" role="search">
+                    <button class="my-blog-btn btn btn-danger btn-lg px-4" type="submit"><a href="index.html"
+                            target="_blank">Home</a></button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <!-- question card -->
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <!-- question card 1 -->
+            <div class="col-lg-6">
+                <div class="card mb-3 p-2" style="background-color: antiquewhite;">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <img src="images/dom1.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">What is DOM and what is the purpose of <br> DOM?</h5>
+                                <p class="card-text">DOM is a data representation of the objects in the HTML and XML
+                                    pages. The document loaded in your browser is represented by a document object
+                                    model.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <button class="ans-btn btn btn-outline-dark"><a href="#ans-one-card">Read
+                                        More..</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- question card 2 -->
+            <div class="col-lg-6">
+                <div class="card mb-3 p-2" style="background-color: #D2CEFF;">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <img src="images/dom2.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">How will you select HTML elements using DOM? Name the DOM
+                                    methods.</h5>
+                                <p class="card-text">There are 5 ways in which we can select elements in a DOM using selectors: getElementsByTagName(), getElementsByClassName(), getElementById(), querySelector(), querySelectorAll()</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <button class="ans-btn btn btn-outline-dark"><a href="#ans-two-card">Read
+                                        More..</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- question card 3 -->
+            <div class="col-lg-6">
+                <div class="card mb-3 p-2" style="background-color: #FECCB5;">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <img src="images/dom1.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">What is event bubble?</h5>
+                                <p class="card-text">Event Bubbling is a concept in the DOM (Document Object Model). It happens when an element receives an event,</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <button class="ans-btn btn btn-outline-dark"><a href="#ans-three-card">Read
+                                        More..</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- question card 4 -->
+            <div class="col-lg-6">
+                <div class="card mb-3 p-2" style="background-color: #FEC447;">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <img src="images/dom2.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">What is a callback function and why will you use it?</h5>
+                                <p class="card-text">A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <button class="ans-btn btn btn-outline-dark"><a href="#ans-four-card">Read
+                                        More..</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- question ans -->
+    <div class="container-fluid">
+        <!-- ans 1 -->
+        <div id="ans-one-card" class="ans-card mb-3">
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-3 mt-5" style="background-color: antiquewhite;">
+                        <div class="card-header" style="font-size: 22px; font-weight: 700;">What is DOM and what is the
+                            purpose of DOM <span class="text-danger">?</span></div>
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">What is DOM ?</h5>
+                            <p class="card-text ans-text">The Document Object Model (DOM) is a data representation of
+                                the objects in the HTML and XML pages. The document loaded in your browser is
+                                represented by a document object model. A web page is a document that can be either
+                                displayed in the browser window or as the HTML source. In both cases, it is the same
+                                document but the Document Object Model (DOM) representation allows it to be manipulated.
+                                As an object-oriented representation of the web page, it can be modified with a
+                                scripting language such as JavaScript.</p>
+                            <h5 class="card-title text-danger">What is the purpose of DOM ?</h5>
+                            <p class="card-text ans-text">In website development, DOM stands for Document Object Model.
+                                It is a programming interface that allows us to create, change, or remove elements from
+                                a website document. DOM manipulation is when you use JavaScript to add, remove, and
+                                modify elements of a website.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ans 2 -->
+        <div id="ans-two-card" class="ans-card mb-3">
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-3 mt-5" style="background-color: #D2CEFF;">
+                        <div class="card-header" style="font-size: 22px; font-weight: 700;">How will you select HTML
+                            elements using DOM <span class="text-danger">?</span> Name the DOM methods.</div>
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">How will you select HTML
+                                elements using DOM ?</h5>
+                            <p class="card-text ans-text">There are 5 ways in which we can select elements in a DOM
+                                using selectors: <b>getElementsByTagName(), getElementsByClassName(), getElementById(),
+                                    querySelector(), querySelectorAll()</b>
+                            </p>
+                            <h5 class="card-title text-danger">Name the DOM methods</h5>
+                            <p class="card-text ans-text ans-text-line">
+                                <b>getElementsByTagName():</b> The “getElementsByTagName()”
+                                HTML DOM method displays the list of child elements of a particular tag. <br>
+                                <b>getElementsByClassName(): </b> The “getElementByClassName()” HTML DOM method displays
+                                the list of child elements of a particular class. <br>
+                                <b>getElementById(): </b> The “getElementByClassName()” HTML DOM method displays
+                                the list of child elements of a particular id. <br>
+                                <b>querySelector(): </b> The “querySelector()” HTML DOM method is utilized to output the
+                                first child element that gets matched with a particular CSS selector of an HTML element.
+                                <br>
+                                <b>querySelectorAll(): </b>The “querySelectorAll()” method returns all child elements
+                                that match a specified CSS selector of an element. <br>
+                                <b>addEventListener(): </b>The “addEventListener()” HTML DOM method is utilized for
+                                attaching an event handler to a particular element. <br>
+                                <b></b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ans 3 -->
+        <div id="ans-three-card" class="ans-card mb-3">
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-3 mt-5" style="background-color: #FECCB5;">
+                        <div class="card-header" style="font-size: 22px; font-weight: 700;">What is event bubble <span
+                                class="text-danger">?</span></div>
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Event bubble</h5>
+                            <p class="card-text ans-text">Event Bubbling is a concept in the DOM (Document Object
+                                Model). It happens when an element receives an event, and that event bubbles up (or you
+                                can say is transmitted or propagated) to its parent and ancestor elements in the DOM
+                                tree until it gets to the root element.</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ans 4 -->
+        <div id="ans-four-card" class="ans-card mb-3">
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-3 mt-5" style="background-color: #FEC447;">
+                        <div class="card-header" style="font-size: 22px; font-weight: 700;">What is a callback function
+                            and why will you use it <span class="text-danger">?</span></div>
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Callback Function</h5>
+                            <p class="card-text ans-text">In computer programming, a callback, also known as a
+                                "call-after" function, is any executable code that is passed as an argument to other
+                                code; that other code is expected to call back the argument at a given time. That Means:
+                                A callback function is a function passed into another function as an argument, which is
+                                then invoked inside the outer function to complete some kind of routine or action.</b>
+                            </p>
+                            <h5 class="card-title text-danger">Why will we use it</h5>
+                            <p class="card-text ans-text">Callback functions are very powerful in javascript and it
+                                gives us access to a whole asynchronous world in the synchronous threaded language.
+                                JavaScript runs code sequentially in top-down order. However, there are some cases that
+                                code runs (or must run) after something else happens and also not sequentially. This is
+                                called asynchronous programming.
+
+                                Callbacks make sure that a function is not going to run before a task is completed but
+                                will run right after the task has completed. It helps us develop asynchronous JavaScript
+                                code and keeps us safe from problems and errors.
+
+                                With the help of a callback function, we can perform asynchronous things inside
+                                javascript.</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- js -->
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- my js -->
+    <script src="js/common.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

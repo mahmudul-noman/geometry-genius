@@ -28,7 +28,10 @@ body {
 .input-box > p {
     margin: 0px;
 }
-
+.my-blog-btn a {
+    color: #fff;
+    text-decoration: none;
+}
 
 
 

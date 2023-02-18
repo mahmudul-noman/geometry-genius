@@ -30,26 +30,3 @@ function displayData(cardName, cardValue) {
     `;
   container.appendChild(tr);
 }
-
-
-// // card 1 color
-// document.getElementById('triangle-random-color').addEventListener('mouseover', function(){
-//   // console.log('clicked color')
-//   const r = Math.floor(Math.random() * 255);
-//   const g = Math.floor(Math.random() * 255);
-//   const b = Math.floor(Math.random() * 255);
-
-//   const changedColor = `rgb(${r}, ${g}, ${b})`;
-//   document.getElementById('triangle-random-color').style.backgroundColor = changedColor;
-// })
-
-
-// function color(rColor){
-//   const okColor = document.getElementById(rColor)
-//   const r = Math.floor(Math.random() * 255);
-//   const g = Math.floor(Math.random() * 255);
-//   const b = Math.floor(Math.random() * 255);
-
-//   const changedColor = `rgb(${r}, ${g}, ${b})`;
-//   document.okColor.style.backgroundColor = changedColor;
-// }
