@@ -4,7 +4,13 @@ function getInputFieldValueById(inputFieldId) {
   const inputFieldValueString = inputField.value;
   const inputFieldValue = parseFloat(inputFieldValueString).toFixed(2);
   inputField.value = '';
-  return inputFieldValue;
+
+  if (isNaN(inputFieldValue) || inputFieldValue < 0 || inputFieldValue == "") {
+    return alert('Something Error There. Please Provide Correct Value');
+  }
+  else {
+    return inputFieldValue;
+  }
 }
 
 
