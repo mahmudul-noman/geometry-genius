@@ -28,3 +28,16 @@ body {
 .input-box > p {
     margin: 0px;
 }
+
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+    .summary-card{
+        margin-top: 20px;
+    }
+
+}

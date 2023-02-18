@@ -1,32 +1,55 @@
 // function : get value from input field
-function getInputFieldValueById(inputFieldId){
-    const inputField = document.getElementById(inputFieldId);
-    const inputFieldValueString =  inputField.value;
-    const inputFieldValue = parseFloat(inputFieldValueString).toFixed(2);
-    inputField.value = '';
-    return inputFieldValue;
+function getInputFieldValueById(inputFieldId) {
+  const inputField = document.getElementById(inputFieldId);
+  const inputFieldValueString = inputField.value;
+  const inputFieldValue = parseFloat(inputFieldValueString).toFixed(2);
+  inputField.value = '';
+  return inputFieldValue;
 }
 
 
 // function : get value from innerHtml
-function getInnerElementValueById(firstId, secondId){
-    const firstValue = document.getElementById(firstId).innerText;
-    const secondValue = document.getElementById(secondId).innerText;
-    const FinalResult = firstValue * secondValue;
-    return FinalResult;
+function getInnerElementValueById(firstId, secondId) {
+  const firstValue = document.getElementById(firstId).innerText;
+  const secondValue = document.getElementById(secondId).innerText;
+  const FinalResult = firstValue * secondValue;
+  return FinalResult;
 }
 
 
 // function : display data in summary box
 function displayData(cardName, cardValue) {
-    const container = document.getElementById("table-container");
-  
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
+  const container = document.getElementById("table-container");
+
+  const tr = document.createElement("tr");
+  tr.innerHTML = `
       <td>${serial}</td>
       <td>${cardName}</td>
       <td>${cardValue}cm<sup>2</sup></td>
       <td><button class="btn btn-primary btn-sm">Convert to m<sup>2</sup></button></td>
     `;
-    container.appendChild(tr);
-  }
+  container.appendChild(tr);
+}
+
+
+// // card 1 color
+// document.getElementById('triangle-random-color').addEventListener('mouseover', function(){
+//   // console.log('clicked color')
+//   const r = Math.floor(Math.random() * 255);
+//   const g = Math.floor(Math.random() * 255);
+//   const b = Math.floor(Math.random() * 255);
+
+//   const changedColor = `rgb(${r}, ${g}, ${b})`;
+//   document.getElementById('triangle-random-color').style.backgroundColor = changedColor;
+// })
+
+
+// function color(rColor){
+//   const okColor = document.getElementById(rColor)
+//   const r = Math.floor(Math.random() * 255);
+//   const g = Math.floor(Math.random() * 255);
+//   const b = Math.floor(Math.random() * 255);
+
+//   const changedColor = `rgb(${r}, ${g}, ${b})`;
+//   document.okColor.style.backgroundColor = changedColor;
+// }

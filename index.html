@@ -28,149 +28,178 @@
     </div>
 
 
-    <!-- card -->
+    <!-- card section -->
     <div class="container-fluid pb-5">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <!-- card 1 -->
-            <div class="col">
-                <div class="card h-100 p-5">
-                    <img src="images/triangle.png" class="card-img-top" alt="Triangle">
-                    <div class="card-body text-center pt-5">
-                        <h5 id="triangle-title" class="card-title">Triangle</h5>
-                        <p class="card-text">Area (A) = 0.5 &#215; b &#215; h</p>
+        <div class="row">
 
-                        <div class="input-box text-center">
-                            <input id="triangle-b-field" class="w-25 px-2" type="text" name="" placeholder="b"> &nbsp; cm
-                            <input id="triangle-h-field" class="w-25 px-2" type="text" name="" placeholder="h"> &nbsp; cm
+            <!-- card -->
+            <div class="col-lg-8">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- card 1 -->
+                    <div class="col">
+                        <div id="triangle-random-color" class="card h-100 p-5">
+                            <img src="images/triangle.png" class="card-img-top" alt="Triangle">
+                            <div class="card-body text-center pt-5">
+                                <h5 id="triangle-title" class="card-title">Triangle</h5>
+                                <p class="card-text">Area (A) = 0.5 &#215; b &#215; h</p>
+
+                                <div class="input-box text-center">
+                                    <input id="triangle-b-field" class="w-25 px-2" type="text" name="" placeholder="b">
+                                    &nbsp;
+                                    cm
+                                    <input id="triangle-h-field" class="w-25 px-2" type="text" name="" placeholder="h">
+                                    &nbsp;
+                                    cm
+                                </div>
+
+                                <button id="triangle-btn"
+                                    class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
+                            </div>
                         </div>
-
-                        <button id="triangle-btn" class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
                     </div>
-                </div>
-            </div>
 
-            <!-- card 2 -->
-            <div class="col">
-                <div class="card h-100 p-5">
-                    <img src="images/rectangle.png" class="card-img-top" alt="Rectangle">
-                    <div class="card-body text-center pt-5">
-                        <h5 id="rectangle-title" class="card-title">Rectangle</h5>
-                        <p class="card-text">Area (A) = w &#215; I</p>
+                    <!-- card 2 -->
+                    <div class="col">
+                        <div id="rectangle-random-color" class="card h-100 p-5">
+                            <img src="images/rectangle.png" class="card-img-top" alt="Rectangle">
+                            <div class="card-body text-center pt-5">
+                                <h5 id="rectangle-title" class="card-title">Rectangle</h5>
+                                <p class="card-text">Area (A) = w &#215; I</p>
 
-                        <div class="input-box text-center">
-                            <input id="rectangle-w-field" class="w-25 px-2" type="text" name="" placeholder="w"> &nbsp; cm
-                            <input id="rectangle-i-field" class="w-25 px-2" type="text" name="" placeholder="i"> &nbsp; cm
+                                <div class="input-box text-center">
+                                    <input id="rectangle-w-field" class="w-25 px-2" type="text" name="" placeholder="w">
+                                    &nbsp;
+                                    cm
+                                    <input id="rectangle-i-field" class="w-25 px-2" type="text" name="" placeholder="i">
+                                    &nbsp;
+                                    cm
+                                </div>
+
+                                <button id="rectangle-btn"
+                                    class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
+                            </div>
                         </div>
-
-                        <button id="rectangle-btn" class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
                     </div>
-                </div>
-            </div>
 
-            <!-- card 3 -->
-            <div class="col">
-                <div class="card h-100 p-5">
-                    <img src="images/parallelogram.png" class="card-img-top" alt="Parallelogram">
-                    <div class="card-body text-center pt-5">
-                        <h5 id="parallelogram-title" class="card-title">Parallelogram</h5>
-                        <p class="card-text">Area (A) = b &#215; h</p>
+                    <!-- card 3 -->
+                    <div class="col">
+                        <div id="parallelogram-random-color" class="card h-100 p-5">
+                            <img src="images/parallelogram.png" class="card-img-top" alt="Parallelogram">
+                            <div class="card-body text-center pt-5">
+                                <h5 id="parallelogram-title" class="card-title">Parallelogram</h5>
+                                <p class="card-text">Area (A) = b &#215; h</p>
 
-                        <div class="input-box text-center d-flex justify-content-center m-0">
-                            <p>b = <span id="parallelogram-b-value">10</span>cm,</p> &nbsp;
-                            <p>h = <span id="parallelogram-h-value">12</span>cm</p>
+                                <div class="input-box text-center d-flex justify-content-center m-0">
+                                    <p>b = <span id="parallelogram-b-value">10</span>cm,</p> &nbsp;
+                                    <p>h = <span id="parallelogram-h-value">12</span>cm</p>
+                                </div>
+
+                                <button id="parallelogram-btn"
+                                    class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
+                            </div>
                         </div>
-
-                        <button id="parallelogram-btn" class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
                     </div>
+
+
+                    <!-- card 4 -->
+                    <div class="col">
+                        <div id="rhombus-random-color" class="card h-100 p-5">
+                            <img src="images/rhombus.png" class="card-img-top" alt="Rhombus">
+                            <div class="card-body text-center pt-5">
+                                <h5 id="rhombus-title" class="card-title">Rhombus</h5>
+                                <p class="card-text">Area (A) = 0.5 &#215; d<sub>1</sub> &#215; d<sub>2</sub></p>
+
+                                <div class="input-box text-center d-flex justify-content-center">
+                                    <p>d<sub>1</sub> = <span id="rhombus-d1-value">16</span>cm,</p> &nbsp;
+                                    <p>d<sub>2</sub> = <span id="rhombus-d2-value">8</span>cm</p>
+                                </div>
+
+                                <button id="rhombus-btn"
+                                    class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 5 -->
+                    <div class="col">
+                        <div id="pentagon-random-color" class="card h-100 p-5">
+                            <img src="images/pentagon.png" class="card-img-top" alt="Pentagon">
+                            <div class="card-body text-center pt-5">
+                                <h5 id="pentagon-title" class="card-title">Pentagon</h5>
+                                <p class="card-text">Area (A) = 0.5 &#215; p &#215; b</p>
+
+                                <div class="input-box text-center d-flex justify-content-center">
+                                    <p>p = <span id="pentagon-p-value">6</span>cm,</p> &nbsp;
+                                    <p>b = <span id="pentagon-b-value">10</span>cm</p>
+                                </div>
+
+                                <button id="pentagon-btn"
+                                    class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- card 6 -->
+                    <div class="col">
+                        <div id="ellipse-random-color" class="card h-100 p-5">
+                            <img src="images/ellipse.png" class="card-img-top" alt="Ellipse">
+                            <div class="card-body text-center pt-5">
+                                <h5 id="ellipse-title" class="card-title">Ellipse</h5>
+                                <p class="card-text">Area (A) = &pi;ab</p>
+
+                                <div class="input-box text-center d-flex justify-content-center">
+                                    <p>a = <span id="ellipse-a-value">10</span>cm,</p> &nbsp;
+                                    <p>b = <span id="ellipse-b-value">4</span>cm</p>
+                                </div>
+
+                                <button id="ellipse-btn"
+                                    class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
 
             <!-- card | Summary -->
-            <div class="col">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><u>Area Calculation</u></h5>
-                        <table class="table table-striped table-bordered w-full">
-                            <tbody id="table-container">
-                                <tr>
-                                    <th>SL</th>
-                                    <th>Title</th>
-                                    <th>Value</th>
-                                    <th>Converter</th>
-                                </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- card 4 -->
-            <div class="col">
-                <div class="card h-100 p-5">
-                    <img src="images/rhombus.png" class="card-img-top" alt="Rhombus">
-                    <div class="card-body text-center pt-5">
-                        <h5 id="rhombus-title" class="card-title">Rhombus</h5>
-                        <p class="card-text">Area (A) = 0.5 &#215; d<sub>1</sub> &#215; d<sub>2</sub></p>
-
-                        <div class="input-box text-center d-flex justify-content-center">
-                            <p>d<sub>1</sub> = <span id="rhombus-d1-value">16</span>cm,</p> &nbsp;
-                            <p>d<sub>2</sub> = <span id="rhombus-d2-value">8</span>cm</p>
+            <div class="col-lg-4 summary-card">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><u>Area Calculation</u></h5>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-responsive w-full">
+                                    <tbody id="table-container">
+                                        <tr>
+                                            <th>SL</th>
+                                            <th>Title</th>
+                                            <th>Value</th>
+                                            <th>Converter</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-
-                        <button id="rhombus-btn" class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
                     </div>
                 </div>
             </div>
 
-            <!-- card 5 -->
-            <div class="col">
-                <div class="card h-100 p-5">
-                    <img src="images/pentagon.png" class="card-img-top" alt="Pentagon">
-                    <div class="card-body text-center pt-5">
-                        <h5 id="pentagon-title" class="card-title">Pentagon</h5>
-                        <p class="card-text">Area (A) = 0.5 &#215; p &#215; b</p>
-
-                        <div class="input-box text-center d-flex justify-content-center">
-                            <p>p = <span id="pentagon-p-value">6</span>cm,</p> &nbsp;
-                            <p>b = <span id="pentagon-b-value">10</span>cm</p>
-                        </div>
-
-                        <button id="pentagon-btn" class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- card 6 -->
-            <div class="col">
-                <div class="card h-100 p-5">
-                    <img src="images/ellipse.png" class="card-img-top" alt="Ellipse">
-                    <div class="card-body text-center pt-5">
-                        <h5 id="ellipse-title" class="card-title">Ellipse</h5>
-                        <p class="card-text">Area (A) = &pi;ab</p>
-
-                        <div class="input-box text-center d-flex justify-content-center">
-                            <p>a = <span id="ellipse-a-value">10</span>cm,</p> &nbsp;
-                            <p>b = <span id="ellipse-b-value">4</span>cm</p>
-                        </div>
-
-                        <button id="ellipse-btn" class="myBtn btn btn-primary d-block mt-5 py-3">Calculate</button>
-                    </div>
-                </div>
-            </div>
+        </div>
+    </div>
 
 
 
 
 
 
-            <!-- js -->
-            <!-- bootstrap -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-            <!-- my js -->
-            <script src="js/common.js"></script>
-            <script src="js/app.js"></script>
+    <!-- js -->
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- my js -->
+    <script src="js/common.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

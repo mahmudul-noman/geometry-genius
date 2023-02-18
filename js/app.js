@@ -3,7 +3,9 @@ let serial = 0;
 document.getElementById('triangle-btn').addEventListener('click', function(){
     const triangle_b_Value = getInputFieldValueById('triangle-b-field');
     const triangle_h_Value = getInputFieldValueById('triangle-h-field');
-    const triangleFixedValue = 0.5;
+    const triangleFixedValue = parseFloat(0.5);
+
+
     const triangleTotalResult = triangleFixedValue * triangle_b_Value * triangle_h_Value;
     const card_Name = document.getElementById("triangle-title").innerText;
     serial += 1;
@@ -61,4 +63,73 @@ document.getElementById('ellipse-btn').addEventListener('click', function(){
     const card_Name = document.getElementById('ellipse-title').innerText;
     serial +=1;
     displayData(card_Name, ellipseFinalResult);
+})
+
+
+
+
+// card 1 random background color
+document.getElementById('triangle-random-color').addEventListener('mouseover', function(){
+    // console.log('clicked color')
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+
+    const changedColor = `rgb(${r}, ${g}, ${b})`;
+    document.getElementById('triangle-random-color').style.backgroundColor = changedColor;
+})
+
+// card 2 random background color
+document.getElementById('rectangle-random-color').addEventListener('mouseover', function(){
+    // console.log('clicked color')
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+
+    const changedColor = `rgb(${r}, ${g}, ${b})`;
+    document.getElementById('rectangle-random-color').style.backgroundColor = changedColor;
+})
+
+// card 3 random background color
+document.getElementById('parallelogram-random-color').addEventListener('mouseover', function(){
+    // console.log('clicked color')
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+
+    const changedColor = `rgb(${r}, ${g}, ${b})`;
+    document.getElementById('parallelogram-random-color').style.backgroundColor = changedColor;
+})
+
+// card 4 random background color
+document.getElementById('rhombus-random-color').addEventListener('mouseover', function(){
+    // console.log('clicked color')
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+
+    const changedColor = `rgb(${r}, ${g}, ${b})`;
+    document.getElementById('rhombus-random-color').style.backgroundColor = changedColor;
+})
+
+// card 5 random background color
+document.getElementById('pentagon-random-color').addEventListener('mouseover', function(){
+    // console.log('clicked color')
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+
+    const changedColor = `rgb(${r}, ${g}, ${b})`;
+    document.getElementById('pentagon-random-color').style.backgroundColor = changedColor;
+})
+
+// card 6 random background color
+document.getElementById('ellipse-random-color').addEventListener('mouseover', function(){
+    // console.log('clicked color')
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+
+    const changedColor = `rgb(${r}, ${g}, ${b})`;
+    document.getElementById('ellipse-random-color').style.backgroundColor = changedColor;
 })
