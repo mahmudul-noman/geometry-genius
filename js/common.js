@@ -6,7 +6,8 @@ function getInputFieldValueById(inputFieldId) {
   inputField.value = '';
 
   if (isNaN(inputFieldValue) || inputFieldValue < 0 || inputFieldValue == "") {
-    return alert('Something Error There. Please Provide Correct Value');
+    alert('Something Error There. Please Provide Correct Value');
+    return;
   }
   else {
     return inputFieldValue;
