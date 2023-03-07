@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 25px;
+}
+.myNav {
+    background-color: #1090D81A;
+}
+.card-title{
+    font-weight: 700;
+}
+.my-blog-btn, a {
+    color: #fff;
+    text-decoration: none;
+}
+.ans-text{
+    font-size: 20px;
+    text-align: justify;
+}
+.ans-btn a{
+    color: #000;
+    text-decoration: none;
+}
+.ans-btn:hover a{
+    color: #fff;
+}
+.ans-text-line{
+    line-height: 2;
+}

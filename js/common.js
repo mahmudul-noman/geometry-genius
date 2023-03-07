@@ -1,0 +1,39 @@
+// function : get value from input field
+function getInputFieldValueById(inputFieldId) {
+  const inputField = document.getElementById(inputFieldId);
+  const inputFieldValueString = inputField.value;
+  const inputFieldValue = parseFloat(inputFieldValueString).toFixed(2);
+  inputField.value = '';
+
+  if (isNaN(inputFieldValue) || inputFieldValue < 0 || inputFieldValue == "") {
+    alert('Something Error There. Please Provide Correct Value');
+    return;
+  }
+  else {
+    return inputFieldValue;
+  }
+}
+
+
+// function : get value from innerHtml
+function getInnerElementValueById(firstId, secondId) {
+  const firstValue = document.getElementById(firstId).innerText;
+  const secondValue = document.getElementById(secondId).innerText;
+  const FinalResult = firstValue * secondValue;
+  return FinalResult;
+}
+
+
+// function : display data in summary box
+function displayData(cardName, cardValue) {
+  const container = document.getElementById("table-container");
+
+  const tr = document.createElement("tr");
+  tr.innerHTML = `
+      <td>${serial}</td>
+      <td>${cardName}</td>
+      <td>${cardValue}cm<sup>2</sup></td>
+      <td><button class="btn btn-primary btn-sm">Convert to m<sup>2</sup></button></td>
+    `;
+  container.appendChild(tr);
+}
